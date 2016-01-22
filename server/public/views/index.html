@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="candidateApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular-Routes Practice</title>
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="views/stylesheet.css" rel="stylesheet">
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+</head>
+<body>
+    <h1 class="text-center"><strong>Presidential Candidate Information</strong></h1>
+    <h4 class="text-center">Please click on the buttons below to read more about each of these three Presidential Candidates.</h4>
+
+    <div class="center-block button-container">
+    <a href="/sanders"><button class="btn btn-info btn-lg">Bernie Sanders</button></a>
+    <a href="/clinton"><button class="btn btn-info btn-lg">Hillary Clinton</button></a>
+    <a href="/rubio"><button class="btn btn-info btn-lg">Marco Rubio</button></a>
+    </div>
+    <br>
+    <div class="candidate-info center-block" ng-view>
+
+    </div>
+    <br>
+    <br>
+    <p class="text-center">*Information sourced from candidates' websites.</p>
+</body>
+</html>
